@@ -1,6 +1,6 @@
 # Taosc integration
 
-`recipe.scm` here is a Guix script to build taosc and fetch the bug exploits,
+`recipe.scm` here is a [Guix] script to build taosc and fetch the bug exploits,
 then print the recipe to demo its integration with DIBE.  For example,
 from this repository's root directory (../..),
 
@@ -32,3 +32,5 @@ printf '{"pid": %d}\n' $(< ./pidfile) > micro_patch.json
 # Apply patch
 echo APPLY > /tmp/dibe_ctrl.$(< ./pidfile)
 ```
+
+[Guix]: https://guix.gnu.org
